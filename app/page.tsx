@@ -51,7 +51,7 @@ export default function HomePage() {
         <div className="hero__bg">
           <Image
             className="hero__bg-img"
-            src="/images/founders-light.webp"
+            src="/images/hero.webp"
             alt="Groeimaten team aan het werk"
             fill
             priority
