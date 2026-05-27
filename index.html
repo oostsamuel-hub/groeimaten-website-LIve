@@ -7,10 +7,6 @@
     <meta name="description" content="Groeimaten helpt keuken- en badkamerbedrijven groeien met bewezen marketing. Van advertentie tot kwalitatieve showroomafspraak. Specialist in keuken & badkamer.">
     <meta name="robots" content="index, follow">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,300;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,300;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap"></noscript>
 
     <style>
         :root{--white:oklch(96% 0.008 85);--black:oklch(9% 0.006 60);--blue:oklch(67% 0.09 75);--dark-section:oklch(9% 0.006 60);--font-serif:'Playfair Display',Georgia,serif;--font-sans:'DM Sans',system-ui,sans-serif;--radius-pill:2px;--transition:.3s cubic-bezier(.25,.46,.45,.94)}
@@ -24,6 +20,10 @@
     </style>
 
     <script>!function(){var t=localStorage.getItem("groeimaten-theme");if(t==="light")document.documentElement.setAttribute("data-theme","light");else if(!t&&window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches)document.documentElement.setAttribute("data-theme","light");}();</script>
+        <link rel="preload" href="fonts/playfair-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/playfair-400-italic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/dm-sans-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/dm-sans-700-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/animations.css">
@@ -76,7 +76,7 @@
 <!-- HERO -->
 <section class="hero hero--fullscreen" id="home">
     <div class="hero__bg">
-        <img class="hero__bg-img" src="images/founders-light.jpg" alt="Groeimaten team aan het werk" loading="eager">
+        <img class="hero__bg-img" src="images/founders-light.webp" alt="Groeimaten team aan het werk" loading="eager">
         <div class="hero__bg-overlay"></div>
     </div>
     <div class="container hero__inner">
@@ -199,7 +199,7 @@
         <div class="media-mention__inner">
             <div class="media-mention__visual reveal-up">
                 <div class="media-mention__frame">
-                    <img src="images/magazine-article.png" alt="Groeimaten in K&D Magazine: Met AI en marketing naar meer afspraken" loading="lazy">
+                    <img src="images/magazine-article.webp" alt="Groeimaten in K&D Magazine: Met AI en marketing naar meer afspraken" loading="lazy">
                     <span class="media-mention__stamp">In de media</span>
                 </div>
             </div>
@@ -312,7 +312,7 @@
             </div>
 
             <div class="ww2__panels" aria-live="polite">
-                <div class="ww2__panel ww2__panel--active" data-ww-panel="0" style="background-image:url('images/founders-office.jpg');background-size:cover;background-position:center;">
+                <div class="ww2__panel ww2__panel--active" data-ww-panel="0" style="background-image:url('images/founders-office.webp');background-size:cover;background-position:center;">
                     <div style="position:absolute;inset:0;background:rgba(6,6,6,0.55);"></div>
                     <div style="position:relative;z-index:1;text-align:center;">
                         <div class="ww2__panel-num">01</div>
@@ -320,7 +320,7 @@
                         <p class="ww2__panel-sub">20–30 min &nbsp;·&nbsp; Eerlijk &amp; zonder verplichtingen</p>
                     </div>
                 </div>
-                <div class="ww2__panel" data-ww-panel="1" style="background-image:url('images/founders-discuss.jpg');background-size:cover;background-position:center;">
+                <div class="ww2__panel" data-ww-panel="1" style="background-image:url('images/founders-discuss.webp');background-size:cover;background-position:center;">
                     <div style="position:absolute;inset:0;background:rgba(6,6,6,0.55);"></div>
                     <div style="position:relative;z-index:1;text-align:center;">
                         <div class="ww2__panel-num">02</div>
@@ -328,7 +328,7 @@
                         <p class="ww2__panel-sub">Op maat &nbsp;·&nbsp; Voor jouw situatie</p>
                     </div>
                 </div>
-                <div class="ww2__panel" data-ww-panel="2" style="background-image:url('images/founders-handshake.jpeg');background-size:cover;background-position:center;">
+                <div class="ww2__panel" data-ww-panel="2" style="background-image:url('images/founders-handshake.webp');background-size:cover;background-position:center;">
                     <div style="position:absolute;inset:0;background:rgba(6,6,6,0.55);"></div>
                     <div style="position:relative;z-index:1;text-align:center;">
                         <div class="ww2__panel-num">03</div>
@@ -336,7 +336,7 @@
                         <p class="ww2__panel-sub">Geen druk &nbsp;·&nbsp; Jij beslist wanneer je er klaar voor bent</p>
                     </div>
                 </div>
-                <div class="ww2__panel" data-ww-panel="3" style="background-image:url('images/founders-working.jpg');background-size:cover;background-position:center;">
+                <div class="ww2__panel" data-ww-panel="3" style="background-image:url('images/founders-working.webp');background-size:cover;background-position:center;">
                     <div style="position:absolute;inset:0;background:rgba(6,6,6,0.55);"></div>
                     <div style="position:relative;z-index:1;text-align:center;">
                         <div class="ww2__panel-num">04</div>
@@ -393,7 +393,7 @@
         </div>
 
         <div class="werkwijze-photo reveal-up delay-3" style="margin-top: 48px; margin-bottom: 0;">
-            <img src="images/founders-office.jpg" alt="Jelle en Thomas van Groeimaten" loading="lazy">
+            <img src="images/founders-office.webp" alt="Jelle en Thomas van Groeimaten" loading="lazy">
         </div>
 
         <div class="resultaten-cta reveal-up">
@@ -448,11 +448,11 @@
 
             <div class="cs-images">
                 <div class="cs-img cs-img--main">
-                    <img id="csMainImg" src="images/founders-strategy.jpg" alt="Stoop Keukens: resultaten" loading="lazy">
+                    <img id="csMainImg" src="images/founders-strategy.webp" alt="Stoop Keukens: resultaten" loading="lazy">
                     <span class="cs-img-label" id="csImgLabel">Stoop Keukens: website screenshot</span>
                 </div>
                 <div class="cs-img cs-img--preview">
-                    <img id="csPreviewImg" src="images/founders-laptop.jpg" alt="Volgende case" loading="lazy">
+                    <img id="csPreviewImg" src="images/founders-laptop.webp" alt="Volgende case" loading="lazy">
                     <span class="cs-img-label" id="csImgPreviewLabel">Tegro</span>
                 </div>
             </div>
@@ -658,7 +658,7 @@
             <div class="home-founders__photo reveal-up">
                 <div class="about-photo-frame">
                     <div class="about-photo-frame__glow"></div>
-                    <img src="images/founders-hero.jpg" alt="Jelle Westerbroek en Thomas Ghobadi van Groeimaten" loading="lazy">
+                    <img src="images/founders-hero.webp" alt="Jelle Westerbroek en Thomas Ghobadi van Groeimaten" loading="lazy">
                 </div>
             </div>
             <div class="home-founders__content reveal-up delay-2">
