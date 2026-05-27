@@ -1,0 +1,10 @@
+node_modules/
+next-app/
+images/photos/
+images/photos.zip
+*.log
+debug*.js
+build_images_csv.js
+scrape_images*.js
+Foto's vanuit oude website/
+.claude/

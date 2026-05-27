@@ -1,0 +1,401 @@
+/* =============================================
+   GLOBAL STYLES — Groeimaten
+   Rebrand 2026: Zwart/Goud · Premium · Sector
+   ============================================= */
+
+@font-face {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/dm-serif-display-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'DM Serif Display';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/dm-serif-display-italic.woff2') format('woff2');
+}
+
+/* CSS Variables */
+:root {
+    /* === Brand Palette === */
+    --deep-black:   oklch(9%  0.006 60);     /* #0f0e0c — hoofdachtergrond       */
+    --warm-white:   oklch(96% 0.008 85);     /* #f5f2ec — tekst, lichte vlakken  */
+    --gold:         oklch(67% 0.090 75);     /* #b89a5a — enig accent             */
+    --gold-dark:    oklch(58% 0.085 75);     /* #9a7d42 — goud hover/actief       */
+    --gold-muted:   oklch(67% 0.035 75);     /* zacht goud tint                   */
+    --stone:        oklch(55% 0.010 70);     /* #8a8074 — secundaire tekst        */
+    --stone-light:  oklch(75% 0.008 70);     /* dividers, borders                 */
+
+    /* === Surfaces === */
+    --surface:       oklch(14% 0.006 60);    /* #1e1c19 — kaarten, verhoogd       */
+    --surface-mid:   oklch(18% 0.006 60);    /* iets lichter                      */
+    --surface-light: oklch(93% 0.006 80);    /* #ece9e3 — lichte sectie-achtergrond */
+
+    /* === Legacy Aliases (backwards compat met rest van codebase) === */
+    --white:            var(--warm-white);
+    --black:            var(--deep-black);
+    --blue:             var(--gold);
+    --blue-dark:        var(--gold-dark);
+    --blue-glow:        oklch(67% 0.09 75 / 0.12);
+    --blue-glow-strong: oklch(67% 0.09 75 / 0.26);
+    --gray-light:       var(--surface-light);
+    --gray-mid:         var(--stone);
+    --gray-border:      oklch(85% 0.006 80);
+    --dark-section:     var(--deep-black);
+    --dark-card:        var(--surface);
+    --dark-card-border: oklch(96% 0.008 85 / 0.07);
+
+    /* === Typography === */
+    --font-serif: 'DM Serif Display', Georgia, serif;
+    --font-sans:  'DM Sans', system-ui, sans-serif;
+    --font-weight-serif: 400; /* DM Serif Display heeft geen bold variant */
+
+    /* === Radius === */
+    --radius-sm:   4px;
+    --radius-md:   8px;
+    --radius-lg:  12px;
+    --radius-pill: 2px;   /* Buttons worden strak/rechthoekig */
+
+    /* === Shadows === */
+    --shadow-sm: 0 2px 8px  oklch(9% 0.006 60 / 0.18);
+    --shadow-md: 0 8px 32px oklch(9% 0.006 60 / 0.28);
+    --shadow-lg: 0 24px 64px oklch(9% 0.006 60 / 0.38);
+
+    /* === Transitions === */
+    --transition:      0.25s cubic-bezier(0.22, 1, 0.36, 1);
+    --transition-slow: 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* =============================================
+   RESET
+   ============================================= */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--warm-white);
+    background: var(--deep-black);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* DM Serif Display heeft geen bold variant — overal 400 forceren */
+h1, h2, h3,
+.hero__title,
+.section-title,
+.page-hero__title,
+.cta-title,
+.ww2__panel-title,
+.cs-title,
+.case-full h2, .case-full h4,
+.pricing-card__name,
+.about-mission__title,
+.founders-section h2,
+.home-founders h2 {
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color var(--transition);
+}
+
+ul { list-style: none; }
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/* =============================================
+   CONTAINER
+   ============================================= */
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+@media (min-width: 768px)  { .container { padding: 0 40px; } }
+@media (min-width: 1280px) { .container { padding: 0 60px; } }
+
+/* =============================================
+   TYPOGRAPHY
+   ============================================= */
+h1, h2, h3, h4 {
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    color: var(--warm-white);
+}
+
+h1 { font-family: var(--font-serif); font-size: clamp(2.4rem, 5vw, 4.75rem); font-weight: 400; line-height: 1.05; }
+h2 { font-family: var(--font-serif); font-size: clamp(1.9rem, 3.5vw, 3.2rem); font-weight: 400; }
+h3 { font-family: var(--font-sans);  font-size: clamp(1.1rem, 2vw, 1.35rem);  font-weight: 600; letter-spacing: -0.02em; }
+h4 { font-family: var(--font-sans);  font-size: 0.95rem; font-weight: 600; letter-spacing: 0; }
+
+/* Gold italic accent — hero koppen */
+em {
+    font-style: italic;
+    font-weight: 300;
+    color: var(--gold);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: oklch(75% 0.006 70);   /* warm stone-grijs */
+}
+
+/* =============================================
+   SECTION SPACING
+   ============================================= */
+section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* =============================================
+   SECTION HEADERS
+   ============================================= */
+.section-header {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto 72px;
+}
+
+/* Label boven sectie-titels */
+.section-label {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+    padding: 5px 14px;
+    background: transparent;
+    border: 1px solid oklch(67% 0.09 75 / 0.35);
+    border-radius: 0;
+}
+
+.section-label--blue {
+    color: var(--gold);
+    border-color: oklch(67% 0.09 75 / 0.40);
+}
+
+.section-title {
+    color: var(--warm-white);
+    margin-bottom: 18px;
+}
+
+.section-title--white { color: var(--warm-white); }
+
+.section-subtitle {
+    font-size: 1.05rem;
+    color: var(--stone);
+    max-width: 540px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.section-subtitle--light { color: oklch(75% 0.006 70); }
+
+/* =============================================
+   BUTTONS
+   ============================================= */
+
+/* Base */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    padding: 14px 32px;
+    border-radius: 0;          /* Strak, architectonisch */
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all var(--transition);
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+}
+
+.btn svg {
+    transition: transform var(--transition);
+    flex-shrink: 0;
+}
+
+.btn:hover svg {
+    transform: translateX(4px);
+}
+
+/* Primary: goud fill */
+.btn--primary {
+    background: var(--gold);
+    color: var(--deep-black);
+    border-color: var(--gold);
+    font-weight: 700;
+}
+
+.btn--primary:hover {
+    background: var(--gold-dark);
+    border-color: var(--gold-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px oklch(67% 0.09 75 / 0.28);
+}
+
+/* White: warm wit fill (op donkere achtergrond) */
+.btn--white {
+    background: var(--warm-white);
+    color: var(--deep-black);
+    border-color: var(--warm-white);
+    font-weight: 700;
+}
+
+.btn--white:hover {
+    background: oklch(92% 0.006 80);
+    border-color: oklch(92% 0.006 80);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px oklch(96% 0.008 85 / 0.18);
+}
+
+/* Ghost: transparant, wit border (op donkere bg) */
+.btn--ghost {
+    background: transparent;
+    color: oklch(85% 0.006 70);
+    border-color: oklch(96% 0.008 85 / 0.22);
+}
+
+.btn--ghost:hover {
+    color: var(--warm-white);
+    border-color: oklch(96% 0.008 85 / 0.55);
+    transform: translateY(-2px);
+}
+
+/* Outline: transparant, goud border + goud tekst */
+.btn--outline {
+    background: transparent;
+    color: var(--gold);
+    border-color: oklch(67% 0.09 75 / 0.50);
+}
+
+.btn--outline:hover {
+    background: oklch(67% 0.09 75 / 0.08);
+    border-color: var(--gold);
+    color: var(--gold);
+    transform: translateY(-2px);
+}
+
+/* Blue → gold (primaire CTA knop)
+   Gebruikt background-size animatie — tekst zit ALTIJD boven de fill,
+   ongeacht of er span-wrappers zijn of niet. */
+.btn--blue {
+    background-color: transparent;
+    background-image: linear-gradient(var(--gold), var(--gold));
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: var(--warm-white);
+    border: 1px solid var(--gold);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    /* Basis: geen color delay → kleur springt instant terug op un-hover */
+    transition: background-size 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+                transform var(--transition),
+                box-shadow var(--transition);
+}
+
+.btn--blue:hover {
+    background-size: 100% 100%;
+    color: var(--deep-black);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px oklch(67% 0.09 75 / 0.22);
+    /* Hover-in: kleur wacht tot fill klaar is (0.28s delay) */
+    transition: background-size 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+                color 0s 0.28s,
+                transform var(--transition),
+                box-shadow var(--transition);
+}
+
+.btn--blue:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Sizes */
+.btn--lg { padding: 16px 40px; font-size: 0.85rem; }
+.btn--xl { padding: 20px 52px; font-size: 0.9rem; }
+
+/* =============================================
+   MICRO CTA
+   ============================================= */
+.cta-micro {
+    font-size: 0.82rem;
+    color: var(--stone);
+    margin-bottom: 16px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+/* =============================================
+   LOGO
+   ============================================= */
+.logo-text {
+    font-family: var(--font-sans);
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    color: var(--warm-white);
+    text-transform: uppercase;
+}
+
+.logo-dot {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: var(--gold);
+    border-radius: 50%;
+    margin-left: 1px;
+    vertical-align: super;
+}
+
+/* Dark logo variant */
+.logo-dark .logo-text { color: var(--deep-black); }

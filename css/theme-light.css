@@ -1,0 +1,1532 @@
+/* =============================================
+   LICHT THEMA — Groeimaten
+   Actief via: html[data-theme="light"]
+   ============================================= */
+
+html[data-theme="light"] {
+
+    /* === Palette override === */
+    --deep-black:    oklch(12% 0.008 60);
+    --warm-white:    oklch(98% 0.005 85);
+    --stone:         oklch(42% 0.008 70);
+    --stone-light:   oklch(62% 0.006 70);
+    --surface:       oklch(100% 0 0);
+    --surface-light: oklch(96% 0.006 80);
+
+    /* Legacy aliases */
+    --white:           oklch(98% 0.005 85);
+    --black:           oklch(12% 0.008 60);
+    --gray-light:      oklch(96% 0.006 80);
+    --gray-mid:        oklch(42% 0.008 70);
+    --gray-border:     oklch(88% 0.006 80);
+    --dark-section:    oklch(96% 0.006 80);
+    --dark-card:       oklch(100% 0 0);
+    --dark-card-border: oklch(12% 0.008 60 / 0.08);
+    --blue-glow:        oklch(67% 0.09 75 / 0.10);
+    --blue-glow-strong: oklch(67% 0.09 75 / 0.20);
+}
+
+/* ============================================
+   BASIS
+   ============================================ */
+html[data-theme="light"] body {
+    background: oklch(98% 0.005 85);
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] h1,
+html[data-theme="light"] h2,
+html[data-theme="light"] h3,
+html[data-theme="light"] h4 {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] p {
+    color: oklch(40% 0.008 70);
+}
+
+html[data-theme="light"] .section-subtitle {
+    color: oklch(42% 0.008 70);
+}
+
+html[data-theme="light"] .section-subtitle--light {
+    color: oklch(42% 0.008 70);
+}
+
+html[data-theme="light"] .section-label {
+    color: oklch(18% 0.008 60);
+    border-color: oklch(67% 0.09 75 / 0.45);
+    background: oklch(67% 0.09 75 / 0.06);
+}
+
+/* em/italic in headings: goud accent op lichte achtergrond */
+html[data-theme="light"] em {
+    color: var(--gold-dark);
+}
+
+/* ============================================
+   NAVIGATIE
+   ============================================ */
+html[data-theme="light"] .nav__links a {
+    color: oklch(28% 0.008 60);
+}
+
+html[data-theme="light"] .nav__links a:hover {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .nav__links a::after {
+    background: var(--gold-dark);
+}
+
+html[data-theme="light"] .nav__cta {
+    background-color: oklch(10% 0.006 60);
+    background-image: linear-gradient(oklch(24% 0.006 60), oklch(24% 0.006 60));
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: oklch(97% 0.004 80);
+    border-color: oklch(10% 0.006 60);
+    transition: background-size 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow var(--transition);
+}
+
+html[data-theme="light"] .nav__cta:hover {
+    background-size: 100% 100%;
+    color: oklch(97% 0.004 80);
+}
+
+html[data-theme="light"] .nav.scrolled {
+    background: oklch(98% 0.005 85 / 0.94);
+    box-shadow: 0 1px 0 oklch(12% 0.008 60 / 0.06), 0 4px 20px oklch(12% 0.008 60 / 0.06);
+}
+
+html[data-theme="light"] .nav.scrolled .logo-text {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .nav.scrolled .nav__links a {
+    color: oklch(28% 0.008 60);
+}
+
+html[data-theme="light"] .nav.scrolled .nav__cta {
+    background: oklch(10% 0.006 60);
+    color: oklch(97% 0.004 80);
+    border-color: oklch(10% 0.006 60);
+}
+
+html[data-theme="light"] .nav.scrolled .nav__cta:hover {
+    background: oklch(20% 0.006 60);
+    border-color: oklch(20% 0.006 60);
+    color: oklch(97% 0.004 80);
+}
+
+html[data-theme="light"] .nav__burger span {
+    background: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .logo-text {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .nav__links.mobile-open {
+    background: oklch(98% 0.005 85);
+}
+
+html[data-theme="light"] .nav__links.mobile-open a {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .nav__links.mobile-open a:hover {
+    color: var(--gold-dark);
+}
+
+/* ============================================
+   HERO — LICHT
+   ============================================ */
+html[data-theme="light"] .hero {
+    background: oklch(98% 0.005 85);
+}
+
+html[data-theme="light"] .hero__glow--1 {
+    background: radial-gradient(circle, oklch(67% 0.09 75 / 0.12) 0%, transparent 70%);
+}
+
+html[data-theme="light"] .hero__glow--2 {
+    background: radial-gradient(circle, oklch(67% 0.09 75 / 0.07) 0%, transparent 60%);
+}
+
+html[data-theme="light"] .hero__title {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .hero__title em {
+    color: var(--gold-dark);
+}
+
+html[data-theme="light"] .hero__subtitle {
+    color: oklch(42% 0.008 70);
+}
+
+html[data-theme="light"] .hero__badge {
+    color: var(--gold-dark);
+    border-color: oklch(67% 0.09 75 / 0.40);
+    background: oklch(67% 0.09 75 / 0.06);
+}
+
+html[data-theme="light"] .badge__dot {
+    background: var(--gold-dark);
+}
+
+html[data-theme="light"] .hero__card {
+    background: oklch(100% 0 0 / 0.9);
+    border-color: oklch(12% 0.008 60 / 0.08);
+    box-shadow: 0 4px 24px oklch(12% 0.008 60 / 0.10);
+    backdrop-filter: none;
+}
+
+html[data-theme="light"] .card__number {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .card__label {
+    color: oklch(50% 0.008 70);
+}
+
+html[data-theme="light"] .card__icon--blue {
+    background: oklch(67% 0.09 75 / 0.10);
+    border-color: oklch(67% 0.09 75 / 0.20);
+}
+
+html[data-theme="light"] .hero__card--main {
+    box-shadow: 0 8px 40px oklch(12% 0.008 60 / 0.12);
+}
+
+html[data-theme="light"] .hero__card--secondary {
+    box-shadow: 0 4px 20px oklch(12% 0.008 60 / 0.08);
+}
+
+html[data-theme="light"] .hero__card--tertiary {
+    color: oklch(42% 0.008 70);
+}
+
+html[data-theme="light"] .scroll-line {
+    background: linear-gradient(to bottom, oklch(67% 0.09 75 / 0.5), transparent);
+}
+
+html[data-theme="light"] .hero__scroll-indicator span {
+    color: oklch(55% 0.008 70);
+}
+
+/* New hero proof row — light theme */
+html[data-theme="light"] .hero__eyebrow {
+    color: var(--gold-dark);
+}
+
+html[data-theme="light"] .hero__proof {
+    border-top-color: oklch(12% 0.008 60 / 0.10);
+}
+
+html[data-theme="light"] .hero__proof-number {
+    color: oklch(10% 0.008 60);
+}
+
+html[data-theme="light"] .hero__proof-label {
+    color: oklch(48% 0.006 70);
+}
+
+html[data-theme="light"] .hero__proof-divider {
+    background: oklch(12% 0.008 60 / 0.12);
+}
+
+/* ============================================
+   LOGO STRIP — zelfde (al licht)
+   ============================================ */
+
+/* ============================================
+   PAIN SECTION — in light mode iets grijzer voor contrast
+   ============================================ */
+html[data-theme="light"] .pain-section {
+    background: oklch(95% 0.006 80);
+}
+
+html[data-theme="light"] .pain-card {
+    background: oklch(100% 0 0);
+    border-color: oklch(12% 0.008 60 / 0.07);
+    box-shadow: 0 2px 12px oklch(12% 0.008 60 / 0.05);
+}
+
+html[data-theme="light"] .pain-card:hover {
+    background: oklch(100% 0 0);
+    border-color: oklch(67% 0.09 75 / 0.35);
+    box-shadow: 0 8px 32px oklch(12% 0.008 60 / 0.10);
+    transform: translateY(-4px);
+}
+
+html[data-theme="light"] .pain-card::before {
+    background: linear-gradient(90deg, transparent, var(--gold-dark), transparent);
+}
+
+html[data-theme="light"] .pain-card__icon {
+    background: oklch(67% 0.09 75 / 0.10);
+    border-color: oklch(67% 0.09 75 / 0.22);
+}
+
+html[data-theme="light"] .pain-card h3 {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .pain-card p {
+    color: oklch(42% 0.008 70);
+}
+
+/* ============================================
+   DIENSTEN SECTION — warm wit
+   ============================================ */
+html[data-theme="light"] .diensten-section {
+    background: oklch(98% 0.005 85);
+}
+
+html[data-theme="light"] .diensten-section::after {
+    background: radial-gradient(circle, oklch(67% 0.09 75 / 0.05) 0%, transparent 65%);
+}
+
+html[data-theme="light"] .dienst-card {
+    background: oklch(100% 0 0);
+    border-color: oklch(12% 0.008 60 / 0.07);
+    box-shadow: 0 2px 12px oklch(12% 0.008 60 / 0.04);
+}
+
+html[data-theme="light"] .dienst-card:hover {
+    background: oklch(100% 0 0);
+    border-color: oklch(67% 0.09 75 / 0.35);
+    box-shadow: 0 12px 40px oklch(12% 0.008 60 / 0.10);
+    transform: translateY(-6px);
+}
+
+html[data-theme="light"] .dienst-card::before {
+    background: linear-gradient(90deg, transparent, oklch(67% 0.09 75 / 0.45), transparent);
+}
+
+html[data-theme="light"] .dienst-card h3 {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .dienst-card p {
+    color: oklch(42% 0.008 70);
+}
+
+html[data-theme="light"] .dienst-card__number {
+    color: oklch(12% 0.008 60 / 0.04);
+}
+
+html[data-theme="light"] .dienst-card:hover .dienst-card__number {
+    color: oklch(67% 0.09 75 / 0.12);
+}
+
+html[data-theme="light"] .dienst-card--featured {
+    background: oklch(99% 0.003 80);
+    border-color: oklch(67% 0.09 75 / 0.35);
+    box-shadow: 0 4px 24px oklch(67% 0.09 75 / 0.10);
+}
+
+html[data-theme="light"] .dienst-card__list li {
+    color: oklch(38% 0.008 70);
+}
+
+/* ============================================
+   WERKWIJZE SECTION — lichtgrijs
+   ============================================ */
+html[data-theme="light"] .werkwijze-section {
+    background: oklch(96% 0.006 80);
+}
+
+html[data-theme="light"] .process-step__content h3 {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .process-step__content p {
+    color: oklch(42% 0.008 70);
+}
+
+html[data-theme="light"] .process-step__number {
+    background: transparent;
+    border-color: oklch(12% 0.008 60);
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .process-step:hover .process-step__number {
+    background: oklch(67% 0.09 75 / 0.08);
+    border-color: var(--gold-dark);
+    color: var(--gold-dark);
+    box-shadow: none;
+}
+
+/* ============================================
+   RESULTATEN SECTION — in light mode pure wit
+   ============================================ */
+html[data-theme="light"] .resultaten-section {
+    background: oklch(100% 0 0);
+}
+
+html[data-theme="light"] .resultaten-section__bg {
+    background: none;
+}
+
+html[data-theme="light"] .stat-card {
+    background: oklch(100% 0 0);
+    border-color: oklch(12% 0.008 60 / 0.07);
+    box-shadow: 0 2px 12px oklch(12% 0.008 60 / 0.05);
+}
+
+html[data-theme="light"] .stat-card:hover {
+    background: oklch(100% 0 0);
+    border-color: oklch(67% 0.09 75 / 0.35);
+    box-shadow: 0 8px 32px oklch(12% 0.008 60 / 0.10);
+}
+
+html[data-theme="light"] .stat-card__number {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .stat-card__label {
+    color: oklch(45% 0.008 70);
+}
+
+html[data-theme="light"] .stat-card__desc {
+    color: oklch(55% 0.008 70);
+}
+
+html[data-theme="light"] .usp-item {
+    background: oklch(100% 0 0);
+    border-color: oklch(12% 0.008 60 / 0.07);
+}
+
+html[data-theme="light"] .usp-item:hover {
+    background: oklch(100% 0 0);
+    border-color: oklch(67% 0.09 75 / 0.30);
+}
+
+html[data-theme="light"] .usp-item span {
+    color: oklch(28% 0.008 60);
+}
+
+/* ============================================
+   TESTIMONIALS SECTION — lichtgrijs
+   ============================================ */
+html[data-theme="light"] .testimonials-section {
+    background: oklch(96% 0.006 80);
+}
+
+html[data-theme="light"] .testimonial-card {
+    background: oklch(100% 0 0);
+    border-color: oklch(12% 0.008 60 / 0.07);
+    box-shadow: 0 2px 12px oklch(12% 0.008 60 / 0.05);
+}
+
+html[data-theme="light"] .testimonial-card:hover {
+    background: oklch(100% 0 0);
+    border-color: oklch(67% 0.09 75 / 0.28);
+    box-shadow: 0 8px 28px oklch(12% 0.008 60 / 0.10);
+}
+
+/* ============================================
+   HOME FOUNDERS (50/50 sectie)
+   ============================================ */
+html[data-theme="light"] .home-founders {
+    background: oklch(98% 0.005 85);
+}
+
+html[data-theme="light"] .home-founders h2 {
+    color: oklch(12% 0.008 60);
+}
+
+/* ============================================
+   CASES PAGE
+   ============================================ */
+html[data-theme="light"] .cases-hero,
+html[data-theme="light"] .cases-section {
+    background: oklch(98% 0.005 85);
+}
+
+html[data-theme="light"] .case-card {
+    background: oklch(100% 0 0);
+    border-color: oklch(12% 0.008 60 / 0.08);
+}
+
+html[data-theme="light"] .case-card:hover {
+    border-color: oklch(67% 0.09 75 / 0.35);
+    box-shadow: 0 12px 40px oklch(12% 0.008 60 / 0.10);
+}
+
+html[data-theme="light"] .case-card h3 {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .case-card p {
+    color: oklch(42% 0.008 70);
+}
+
+/* ============================================
+   OVER ONS PAGE
+   ============================================ */
+html[data-theme="light"] .about-section {
+    background: oklch(98% 0.005 85);
+}
+
+html[data-theme="light"] .founder-split {
+    background: oklch(98% 0.005 85);
+}
+
+html[data-theme="light"] .founder-split--alt {
+    background: oklch(96% 0.006 80);
+}
+
+/* ============================================
+   CONTACT PAGE
+   ============================================ */
+html[data-theme="light"] .contact-section,
+html[data-theme="light"] .contact-hero {
+    background: oklch(98% 0.005 85);
+}
+
+html[data-theme="light"] .contact-card {
+    background: oklch(100% 0 0);
+    border-color: oklch(12% 0.008 60 / 0.08);
+}
+
+html[data-theme="light"] .form-input,
+html[data-theme="light"] .form-select,
+html[data-theme="light"] .form-textarea {
+    background: oklch(100% 0 0);
+    border-color: oklch(12% 0.008 60 / 0.15);
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .form-input:focus,
+html[data-theme="light"] .form-select:focus,
+html[data-theme="light"] .form-textarea:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px oklch(67% 0.09 75 / 0.12);
+}
+
+html[data-theme="light"] .form-label {
+    color: oklch(22% 0.008 60);
+}
+
+/* ============================================
+   DIENSTEN PAGE
+   ============================================ */
+html[data-theme="light"] .diensten-page,
+html[data-theme="light"] .page-hero {
+    background: oklch(98% 0.005 85);
+}
+
+/* ============================================
+   PRIJZEN PAGE
+   ============================================ */
+html[data-theme="light"] .pricing-page {
+    background: oklch(98% 0.005 85);
+}
+
+html[data-theme="light"] .pricing-title {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .pricing-subtitle {
+    color: oklch(42% 0.008 70);
+}
+
+html[data-theme="light"] .pricing-card__inner {
+    background: oklch(100% 0 0);
+    border-color: oklch(12% 0.008 60 / 0.10);
+    box-shadow: 0 4px 20px oklch(12% 0.008 60 / 0.07);
+}
+
+html[data-theme="light"] .pricing-card:hover .pricing-card__inner {
+    border-color: oklch(67% 0.09 75 / 0.40);
+    box-shadow: 0 12px 40px oklch(12% 0.008 60 / 0.12);
+}
+
+html[data-theme="light"] .pricing-card--popular .pricing-card__inner {
+    border-color: oklch(67% 0.09 75 / 0.50);
+    box-shadow: 0 8px 40px oklch(67% 0.09 75 / 0.14);
+}
+
+html[data-theme="light"] .pricing-card__name {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .pricing-card__desc {
+    color: oklch(42% 0.008 70);
+}
+
+html[data-theme="light"] .pricing-card__amount {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .pricing-card__period {
+    color: oklch(50% 0.008 70);
+}
+
+html[data-theme="light"] .pricing-card__features li {
+    color: oklch(28% 0.008 60);
+}
+
+html[data-theme="light"] .pricing-card__divider {
+    background: oklch(12% 0.008 60 / 0.08);
+}
+
+html[data-theme="light"] .pricing-guarantee {
+    border-color: oklch(12% 0.008 60 / 0.10);
+}
+
+/* ============================================
+   FAQ
+   ============================================ */
+html[data-theme="light"] .faq-item {
+    border-color: oklch(12% 0.008 60 / 0.10);
+}
+
+html[data-theme="light"] .faq-item__question {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .faq-item__answer p {
+    color: oklch(42% 0.008 70);
+}
+
+/* ============================================
+   SECTION DIVIDER
+   ============================================ */
+html[data-theme="light"] .section-divider {
+    background: linear-gradient(90deg, transparent, oklch(67% 0.09 75 / 0.25), transparent);
+}
+
+/* ============================================
+   SECTION TITLES (explicit warm-white overrides)
+   ============================================ */
+html[data-theme="light"] .section-title,
+html[data-theme="light"] .section-title--white {
+    color: oklch(12% 0.008 60);
+}
+
+/* ============================================
+   BUTTONS — licht mode
+   ============================================ */
+
+/* Ghost button */
+html[data-theme="light"] .btn--ghost {
+    color: oklch(28% 0.008 60);
+    border-color: oklch(12% 0.008 60 / 0.28);
+}
+
+html[data-theme="light"] .btn--ghost:hover {
+    color: oklch(12% 0.008 60);
+    border-color: oklch(12% 0.008 60 / 0.55);
+    background: oklch(12% 0.008 60 / 0.05);
+}
+
+/* Outline button */
+html[data-theme="light"] .btn--outline {
+    color: oklch(12% 0.008 60);
+    border-color: oklch(12% 0.008 60 / 0.40);
+}
+
+html[data-theme="light"] .btn--outline:hover {
+    background: oklch(12% 0.008 60 / 0.06);
+    color: oklch(12% 0.008 60);
+    border-color: oklch(12% 0.008 60 / 0.70);
+}
+
+/* Blue/primary CTA button: solid zwart met witte tekst (licht thema) */
+html[data-theme="light"] .btn--blue {
+    background-color: oklch(10% 0.006 60);
+    background-image: linear-gradient(oklch(24% 0.006 60), oklch(24% 0.006 60));
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: oklch(97% 0.004 80);
+    border-color: oklch(10% 0.006 60);
+    transition: background-size 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+                transform var(--transition),
+                box-shadow var(--transition);
+}
+
+html[data-theme="light"] .btn--blue:hover {
+    background-size: 100% 100%;
+    color: oklch(97% 0.004 80);
+    box-shadow: 0 8px 24px oklch(10% 0.006 60 / 0.22);
+}
+
+/* White button */
+html[data-theme="light"] .btn--white {
+    background: oklch(12% 0.008 60);
+    color: oklch(98% 0.005 85);
+    border-color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .btn--white:hover {
+    background: oklch(22% 0.008 60);
+    border-color: oklch(22% 0.008 60);
+    box-shadow: 0 8px 24px oklch(12% 0.008 60 / 0.20);
+}
+
+/* ============================================
+   TESTIMONIALS — tekst
+   ============================================ */
+html[data-theme="light"] .testimonial-card blockquote {
+    color: oklch(32% 0.008 70);
+}
+
+html[data-theme="light"] .testimonial-card__author strong {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .testimonial-card__author span {
+    color: oklch(50% 0.008 70);
+}
+
+html[data-theme="light"] .testimonial-card__stars {
+    text-shadow: none;
+}
+
+/* ============================================
+   OVER ONS SECTION (home) — licht
+   ============================================ */
+html[data-theme="light"] .over-ons-section {
+    background: oklch(98% 0.005 85);
+}
+
+html[data-theme="light"] .over-ons__content p {
+    color: oklch(38% 0.008 70);
+}
+
+html[data-theme="light"] .over-ons__content h2 {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .over-ons__card {
+    background: oklch(100% 0 0);
+    border-color: oklch(12% 0.008 60 / 0.08);
+    box-shadow: 0 4px 24px oklch(12% 0.008 60 / 0.08);
+}
+
+html[data-theme="light"] .over-ons__card-glow {
+    display: none;
+}
+
+html[data-theme="light"] .over-ons__stats {
+    border-bottom-color: oklch(12% 0.008 60 / 0.08);
+}
+
+html[data-theme="light"] .mini-stat__number {
+    color: oklch(12% 0.008 60);
+    text-shadow: none;
+}
+
+html[data-theme="light"] .mini-stat__label {
+    color: oklch(50% 0.008 70);
+}
+
+html[data-theme="light"] .over-ons__quote {
+    color: var(--gold-dark);
+    text-shadow: none;
+}
+
+/* ============================================
+   FAQ — licht achtergrond
+   ============================================ */
+html[data-theme="light"] .faq-section {
+    background: oklch(96% 0.006 80);
+}
+
+html[data-theme="light"] .faq-list {
+    background: oklch(100% 0 0);
+    border-color: oklch(12% 0.008 60 / 0.10);
+}
+
+html[data-theme="light"] .faq-item {
+    border-bottom-color: oklch(12% 0.008 60 / 0.08);
+}
+
+html[data-theme="light"] .faq-item__icon {
+    color: oklch(42% 0.008 70);
+}
+
+html[data-theme="light"] .faq-item__question:hover {
+    background: oklch(12% 0.008 60 / 0.03);
+}
+
+html[data-theme="light"] .faq-item__question[aria-expanded="true"] {
+    background: oklch(67% 0.09 75 / 0.06);
+}
+
+/* ============================================
+   DIENST-CARD FEATURED — lichte tekst override
+   ============================================ */
+html[data-theme="light"] .dienst-card--featured .dienst-card__list li {
+    color: oklch(35% 0.008 70);
+}
+
+html[data-theme="light"] .dienst-card--featured {
+    background: oklch(99% 0.003 80);
+    border-color: oklch(67% 0.09 75 / 0.35);
+    box-shadow: 0 4px 24px oklch(67% 0.09 75 / 0.10);
+}
+
+/* ============================================
+   CTA MICRO TEKST
+   ============================================ */
+html[data-theme="light"] .cta-micro {
+    color: oklch(50% 0.008 70);
+}
+
+/* ============================================
+   OVER ONS PAGE — tekst overrides
+   ============================================ */
+html[data-theme="light"] .founder-content p,
+html[data-theme="light"] .about-content p,
+html[data-theme="light"] .page-hero__subtitle {
+    color: oklch(38% 0.008 70);
+}
+
+html[data-theme="light"] .page-hero__title,
+html[data-theme="light"] .founder-content h2,
+html[data-theme="light"] .founder-content h3,
+html[data-theme="light"] .about-content h2,
+html[data-theme="light"] .about-content h3 {
+    color: oklch(12% 0.008 60);
+}
+
+/* ============================================
+   CONTACT PAGE — tekst
+   ============================================ */
+html[data-theme="light"] .contact-card p,
+html[data-theme="light"] .contact-info p {
+    color: oklch(38% 0.008 70);
+}
+
+html[data-theme="light"] .contact-card h3,
+html[data-theme="light"] .contact-info h3,
+html[data-theme="light"] .contact-card h2 {
+    color: oklch(12% 0.008 60);
+}
+
+/* ============================================
+   DIENSTEN PAGE — tekst
+   ============================================ */
+html[data-theme="light"] .dienst-detail p,
+html[data-theme="light"] .dienst-features li,
+html[data-theme="light"] .service-card p {
+    color: oklch(38% 0.008 70);
+}
+
+/* ============================================
+   LOGO STRIP — licht thema aanpassing
+   ============================================ */
+html[data-theme="light"] .logo-strip {
+    background: oklch(98% 0.003 80);
+    border-top-color: oklch(90% 0.005 80);
+    border-bottom-color: oklch(90% 0.005 80);
+}
+
+/* ============================================
+   SPECIALIST STRIP (gold bar) — keep as-is
+   ============================================ */
+
+/* ============================================
+   DIENSTEN PAGE — service-detail secties
+   ============================================ */
+html[data-theme="light"] .service-detail {
+    background: oklch(98% 0.005 85);
+}
+
+html[data-theme="light"] .service-detail:nth-child(even) {
+    background: oklch(96% 0.006 80);
+}
+
+html[data-theme="light"] .service-detail__content > p {
+    color: oklch(38% 0.008 70);
+}
+
+html[data-theme="light"] .service-feature h4 {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .service-feature p {
+    color: oklch(42% 0.008 70);
+}
+
+html[data-theme="light"] .service-visual-card {
+    background: oklch(100% 0 0);
+    border-color: oklch(12% 0.008 60 / 0.08);
+    box-shadow: 0 4px 20px oklch(12% 0.008 60 / 0.07);
+}
+
+html[data-theme="light"] .service-visual-card__glow {
+    display: none;
+}
+
+html[data-theme="light"] .service-visual-card__number {
+    color: oklch(12% 0.008 60);
+    text-shadow: none;
+}
+
+html[data-theme="light"] .service-visual-card__label {
+    color: oklch(50% 0.008 70);
+}
+
+html[data-theme="light"] .service-visual-card__bar {
+    background: oklch(12% 0.008 60 / 0.08);
+}
+
+/* WHY SECTION (diensten page) */
+html[data-theme="light"] .why-section {
+    background: oklch(96% 0.006 80);
+}
+
+html[data-theme="light"] .why-card {
+    background: oklch(100% 0 0);
+    border-color: oklch(12% 0.008 60 / 0.07);
+}
+
+html[data-theme="light"] .why-card:hover {
+    background: oklch(100% 0 0);
+    border-color: oklch(67% 0.09 75 / 0.32);
+    box-shadow: 0 8px 28px oklch(12% 0.008 60 / 0.08);
+}
+
+html[data-theme="light"] .why-card h3 {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .why-card p {
+    color: oklch(42% 0.008 70);
+}
+
+/* TOOLS SECTION */
+html[data-theme="light"] .tools-section {
+    background: oklch(98% 0.005 85);
+}
+
+html[data-theme="light"] .tool-item {
+    background: oklch(100% 0 0);
+    border-color: oklch(12% 0.008 60 / 0.07);
+}
+
+html[data-theme="light"] .tool-item:hover {
+    background: oklch(100% 0 0);
+    border-color: oklch(67% 0.09 75 / 0.28);
+}
+
+html[data-theme="light"] .tool-item h4 {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .tool-item p {
+    color: oklch(48% 0.008 70);
+}
+
+/* ============================================
+   CASES PAGE — alle tekst
+   ============================================ */
+html[data-theme="light"] .cases-stats {
+    background: oklch(96% 0.006 80);
+    border-bottom-color: oklch(12% 0.008 60 / 0.06);
+}
+
+html[data-theme="light"] .cases-stats__number {
+    color: oklch(12% 0.008 60);
+    text-shadow: none;
+}
+
+html[data-theme="light"] .cases-stats__label {
+    color: oklch(50% 0.008 70);
+}
+
+html[data-theme="light"] .cases-full-section {
+    background: oklch(98% 0.005 85);
+}
+
+html[data-theme="light"] .case-card {
+    background: oklch(100% 0 0);
+    border-color: oklch(12% 0.008 60 / 0.08);
+}
+
+html[data-theme="light"] .case-card__content h3 {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .case-card__content p {
+    color: oklch(42% 0.008 70);
+}
+
+html[data-theme="light"] .case-stat__label {
+    color: oklch(50% 0.008 70);
+}
+
+html[data-theme="light"] .case-card__visual {
+    background: oklch(96% 0.006 80);
+    border-bottom-color: oklch(12% 0.008 60 / 0.06);
+}
+
+html[data-theme="light"] .case-full {
+    background: oklch(100% 0 0);
+    border-color: oklch(12% 0.008 60 / 0.08);
+}
+
+html[data-theme="light"] .case-full:hover {
+    border-color: oklch(67% 0.09 75 / 0.30);
+    box-shadow: 0 8px 32px oklch(12% 0.008 60 / 0.08);
+}
+
+html[data-theme="light"] .case-full__header {
+    border-bottom-color: oklch(12% 0.008 60 / 0.06);
+}
+
+html[data-theme="light"] .case-full__info h2 {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .case-full__desc {
+    color: oklch(42% 0.008 70);
+}
+
+html[data-theme="light"] .case-full__result-label {
+    color: oklch(50% 0.008 70);
+}
+
+html[data-theme="light"] .case-full__challenge,
+html[data-theme="light"] .case-full__solution,
+html[data-theme="light"] .case-full__outcome {
+    border-bottom-color: oklch(12% 0.008 60 / 0.06);
+    border-right-color: oklch(12% 0.008 60 / 0.06);
+}
+
+html[data-theme="light"] .case-full__challenge p,
+html[data-theme="light"] .case-full__solution p,
+html[data-theme="light"] .case-full__outcome p {
+    color: oklch(42% 0.008 70);
+}
+
+/* ============================================
+   OVER ONS PAGE — alle secties
+   ============================================ */
+html[data-theme="light"] .about-mission {
+    background: oklch(98% 0.005 85);
+}
+
+html[data-theme="light"] .about-mission__content p {
+    color: oklch(38% 0.008 70);
+}
+
+html[data-theme="light"] .about-stat {
+    background: oklch(100% 0 0);
+    border-color: oklch(12% 0.008 60 / 0.08);
+}
+
+html[data-theme="light"] .about-stat:hover {
+    border-color: oklch(67% 0.09 75 / 0.30);
+    background: oklch(100% 0 0);
+}
+
+html[data-theme="light"] .about-stat__number {
+    text-shadow: none;
+}
+
+html[data-theme="light"] .about-stat__label {
+    color: oklch(32% 0.008 70);
+}
+
+html[data-theme="light"] .about-stat p {
+    color: oklch(50% 0.008 70);
+}
+
+html[data-theme="light"] .values-section {
+    background: oklch(96% 0.006 80);
+}
+
+html[data-theme="light"] .value-card {
+    background: oklch(100% 0 0);
+    border-color: oklch(12% 0.008 60 / 0.07);
+}
+
+html[data-theme="light"] .value-card:hover {
+    border-color: oklch(67% 0.09 75 / 0.30);
+    background: oklch(100% 0 0);
+}
+
+html[data-theme="light"] .value-card h3 {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .value-card p {
+    color: oklch(42% 0.008 70);
+}
+
+html[data-theme="light"] .about-niche {
+    background: oklch(98% 0.005 85);
+}
+
+html[data-theme="light"] .about-niche__content p {
+    color: oklch(38% 0.008 70);
+}
+
+html[data-theme="light"] .niche-point {
+    color: oklch(30% 0.008 70);
+}
+
+/* ============================================
+   CONTACT PAGE — formulier en kaarten
+   ============================================ */
+html[data-theme="light"] .contact-form-wrapper {
+    background: oklch(100% 0 0);
+    border-color: oklch(12% 0.008 60 / 0.08);
+    box-shadow: 0 4px 24px oklch(12% 0.008 60 / 0.07);
+}
+
+html[data-theme="light"] .contact-form__title {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .contact-form__subtitle {
+    color: oklch(48% 0.008 70);
+}
+
+html[data-theme="light"] .form-group label {
+    color: oklch(28% 0.008 60);
+}
+
+html[data-theme="light"] .form-group input,
+html[data-theme="light"] .form-group select,
+html[data-theme="light"] .form-group textarea {
+    background: oklch(98% 0.005 85);
+    border-color: oklch(12% 0.008 60 / 0.14);
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .form-group input::placeholder,
+html[data-theme="light"] .form-group textarea::placeholder {
+    color: oklch(62% 0.006 70);
+}
+
+html[data-theme="light"] .form-group input:focus,
+html[data-theme="light"] .form-group select:focus,
+html[data-theme="light"] .form-group textarea:focus {
+    border-color: var(--gold);
+    background: oklch(100% 0 0);
+    box-shadow: 0 0 0 3px oklch(67% 0.09 75 / 0.12);
+}
+
+html[data-theme="light"] .form-group select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='oklch(42%25 0.008 70)' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+}
+
+html[data-theme="light"] .form-group select option {
+    background: oklch(100% 0 0);
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .contact-info-card {
+    background: oklch(100% 0 0);
+    border-color: oklch(12% 0.008 60 / 0.08);
+}
+
+html[data-theme="light"] .contact-info-card--dark {
+    background: oklch(98% 0.005 85);
+    border-color: oklch(67% 0.09 75 / 0.20);
+}
+
+html[data-theme="light"] .contact-info-card h3 {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .contact-info-card > p {
+    color: oklch(42% 0.008 70);
+}
+
+html[data-theme="light"] .contact-info-item h4 {
+    color: oklch(22% 0.008 60);
+}
+
+html[data-theme="light"] .contact-info-item p {
+    color: oklch(48% 0.008 70);
+}
+
+/* ============================================
+   PRICING — guarantee row & FAQ
+   ============================================ */
+html[data-theme="light"] .pricing-guarantee {
+    border-top-color: oklch(12% 0.008 60 / 0.10);
+    border-bottom-color: oklch(12% 0.008 60 / 0.10);
+}
+
+html[data-theme="light"] .pricing-guarantee__item {
+    color: oklch(30% 0.008 70);
+}
+
+html[data-theme="light"] .pricing-faq {
+    background: oklch(96% 0.006 80);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+/* ============================================
+   FOUNDER SPLIT SECTIES (over-ons.html)
+   ============================================ */
+html[data-theme="light"] .founder-split {
+    background: oklch(98% 0.005 85);
+}
+
+html[data-theme="light"] .founder-split--alt {
+    background: oklch(96% 0.006 80);
+}
+
+html[data-theme="light"] .founder-split__content h2 {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .founder-split__content p {
+    color: oklch(38% 0.008 70);
+}
+
+/* ============================================
+   PAGE HEROES (inner pagina's)
+   ============================================ */
+html[data-theme="light"] .page-hero {
+    background: oklch(98% 0.005 85);
+}
+
+html[data-theme="light"] .page-hero__title {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .page-hero__subtitle {
+    color: oklch(42% 0.008 70);
+}
+
+html[data-theme="light"] .cases-hero {
+    background: oklch(98% 0.005 85);
+}
+
+/* ============================================
+   HOME FOUNDERS SECTION — tekst
+   ============================================ */
+html[data-theme="light"] .home-founders p {
+    color: oklch(38% 0.008 70);
+}
+
+html[data-theme="light"] .home-founders h3 {
+    color: oklch(12% 0.008 60);
+}
+
+/* ============================================
+   THEME TOGGLE BUTTON
+   ============================================ */
+.theme-toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid oklch(96% 0.008 85 / 0.22);
+    border-radius: 0;
+    background: transparent;
+    color: oklch(96% 0.008 85 / 0.65);
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.22,1,0.36,1);
+    flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+.theme-toggle .icon-sun { display: none; }
+.theme-toggle .icon-moon { display: block; }
+
+html[data-theme="light"] .theme-toggle {
+    border-color: oklch(12% 0.008 60 / 0.18);
+    color: oklch(42% 0.008 70);
+}
+
+html[data-theme="light"] .theme-toggle:hover {
+    border-color: var(--gold-dark);
+    color: var(--gold-dark);
+}
+
+html[data-theme="light"] .theme-toggle .icon-sun { display: block; }
+html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
+
+@media (min-width: 768px) {
+    .theme-toggle { display: inline-flex; }
+}
+
+/* ============================================================
+   DONKERE SECTIES IN LICHT THEMA
+   CTA-sectie en footer blijven donker — herstel witte tekst
+   ============================================================ */
+
+/* ---- CTA SECTIE (donker) ---- */
+html[data-theme="light"] .cta-section {
+    color: oklch(96% 0.008 85);
+}
+
+html[data-theme="light"] .cta-section h1,
+html[data-theme="light"] .cta-section h2,
+html[data-theme="light"] .cta-section h3,
+html[data-theme="light"] .cta-section h4,
+html[data-theme="light"] .cta-section .cta-title {
+    color: oklch(96% 0.008 85);
+}
+
+html[data-theme="light"] .cta-section p,
+html[data-theme="light"] .cta-section .cta-subtitle {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+html[data-theme="light"] .cta-section .cta-disclaimer {
+    color: rgba(255, 255, 255, 0.30);
+}
+
+html[data-theme="light"] .cta-section .section-label {
+    color: var(--gold);
+    border-color: oklch(67% 0.09 75 / 0.40);
+}
+
+html[data-theme="light"] .cta-section em {
+    color: var(--gold);
+}
+
+/* ---- FOOTER (donker) ---- */
+html[data-theme="light"] .footer {
+    color: rgba(255, 255, 255, 0.70);
+}
+
+html[data-theme="light"] .footer .logo-text {
+    color: oklch(96% 0.008 85);
+}
+
+html[data-theme="light"] .footer h2,
+html[data-theme="light"] .footer h3,
+html[data-theme="light"] .footer h4 {
+    color: rgba(255, 255, 255, 0.40);
+}
+
+html[data-theme="light"] .footer p,
+html[data-theme="light"] .footer .footer__desc,
+html[data-theme="light"] .footer .footer__bottom p {
+    color: rgba(255, 255, 255, 0.30);
+}
+
+html[data-theme="light"] .footer__nav ul a {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+html[data-theme="light"] .footer__nav ul a:hover {
+    color: var(--gold);
+}
+
+html[data-theme="light"] .footer__legal a {
+    color: rgba(255, 255, 255, 0.20);
+}
+
+html[data-theme="light"] .footer__legal a:hover {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+html[data-theme="light"] .footer__socials a {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+html[data-theme="light"] .footer__socials a:hover {
+    color: var(--gold);
+}
+
+/* ---- EXTENDED TEAM (donker, over-ons pagina) ---- */
+html[data-theme="light"] .extended-team {
+    color: oklch(96% 0.008 85);
+}
+
+html[data-theme="light"] .extended-team h2,
+html[data-theme="light"] .extended-team h3,
+html[data-theme="light"] .extended-team h4 {
+    color: oklch(96% 0.008 85);
+}
+
+html[data-theme="light"] .extended-team p,
+html[data-theme="light"] .ext-team-card__bio {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+html[data-theme="light"] .ext-team-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme="light"] .ext-team-card__name {
+    color: oklch(96% 0.008 85);
+}
+
+html[data-theme="light"] .ext-team-card__tags span {
+    color: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.10);
+}
+
+html[data-theme="light"] .extended-team .section-label {
+    color: var(--gold);
+    border-color: oklch(67% 0.09 75 / 0.40);
+}
+
+html[data-theme="light"] .extended-team .section-title {
+    color: oklch(96% 0.008 85);
+}
+
+html[data-theme="light"] .extended-team .section-subtitle {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+/* ---- CLIENT WALL (donker) ---- */
+html[data-theme="light"] .client-wall-section {
+    color: oklch(96% 0.008 85);
+}
+
+html[data-theme="light"] .client-wall-section h2,
+html[data-theme="light"] .client-wall-section h3,
+html[data-theme="light"] .client-wall-section h4 {
+    color: oklch(96% 0.008 85);
+}
+
+html[data-theme="light"] .client-wall-section p {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+html[data-theme="light"] .client-wall__item {
+    color: rgba(255, 255, 255, 0.60);
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme="light"] .client-wall__item:hover {
+    color: oklch(96% 0.008 85);
+    border-color: oklch(67% 0.09 75 / 0.25);
+}
+
+html[data-theme="light"] .client-wall-section .section-label {
+    color: var(--gold);
+    border-color: oklch(67% 0.09 75 / 0.40);
+}
+
+html[data-theme="light"] .client-wall-section .section-title {
+    color: oklch(96% 0.008 85);
+}
+
+html[data-theme="light"] .client-wall-section .section-subtitle {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+/* ---- PRICING FAQ (lichtgrijs) ---- */
+html[data-theme="light"] .pricing-faq .faq-item__question {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .pricing-faq .faq-item__answer p {
+    color: oklch(42% 0.008 70);
+}
+
+/* ============================================================
+   HOVER STATES — knoppen in licht thema
+   ============================================================ */
+
+/* Primary button hover: goud fill, zwarte tekst */
+html[data-theme="light"] .btn--primary:hover {
+    background: var(--gold-dark);
+    border-color: var(--gold-dark);
+    color: oklch(12% 0.008 60);
+}
+
+/* ============================================================
+   OVERIGE MISSENDE ELEMENTEN
+   ============================================================ */
+
+/* Prijzen — euro teken voor het bedrag */
+html[data-theme="light"] .pricing-card__amount::before {
+    color: var(--gold-dark);
+}
+
+/* Home founders content */
+html[data-theme="light"] .home-founders__content p {
+    color: oklch(38% 0.008 70);
+}
+
+html[data-theme="light"] .home-founders__content h2,
+html[data-theme="light"] .home-founders__content h3 {
+    color: oklch(12% 0.008 60);
+}
+
+/* About BTS section */
+html[data-theme="light"] .about-bts__content p {
+    color: oklch(38% 0.008 70);
+}
+
+/* About numbers (about-num) */
+html[data-theme="light"] .about-num__val {
+    color: oklch(12% 0.008 60);
+}
+
+html[data-theme="light"] .about-num__label {
+    color: oklch(50% 0.008 70);
+}
+
+/* SEO term op diensten pagina */
+html[data-theme="light"] .seo-term {
+    color: oklch(38% 0.008 70);
+}
+
+/* Magazine badge (dark overlay op foto — wit tekst behouden) */
+html[data-theme="light"] .magazine-badge {
+    color: oklch(96% 0.008 85);
+}
+
+/* Author avatar initialen (op gekleurde achtergrond) */
+html[data-theme="light"] .author-avatar {
+    color: oklch(12% 0.008 60);
+}
+
+/* FAQ item icon hover: goud */
+html[data-theme="light"] .faq-item__question:hover .faq-item__icon,
+html[data-theme="light"] .faq-item__question[aria-expanded="true"] .faq-item__icon {
+    color: var(--gold-dark);
+}
+
+/* Werkwijze hover: goud accent op nummer */
+html[data-theme="light"] .process-step:hover .process-step__number {
+    background: oklch(67% 0.09 75 / 0.08);
+    border-color: var(--gold-dark);
+    color: var(--gold-dark);
+    box-shadow: none;
+}
+
+/* Scroll indicator */
+html[data-theme="light"] .hero__scroll-indicator span {
+    color: oklch(55% 0.008 70);
+}
+
+/* Over ons section — mini stats */
+html[data-theme="light"] .mini-stat__number {
+    color: oklch(12% 0.008 60);
+    text-shadow: none;
+}
+
+/* Dienst card decoratief nummer */
+html[data-theme="light"] .dienst-card__number {
+    color: oklch(12% 0.008 60 / 0.04);
+}
+
+/* Dienst card hover — decoratief nummer */
+html[data-theme="light"] .dienst-card:hover .dienst-card__number {
+    color: oklch(67% 0.09 75 / 0.12);
+}
