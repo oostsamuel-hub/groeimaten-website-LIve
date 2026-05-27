@@ -457,7 +457,7 @@
 .card__number {
     font-family: var(--font-serif);
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--white);
     line-height: 1;
     margin-bottom: 4px;
@@ -958,7 +958,7 @@
 .dienst-card__number {
     font-size: 3.5rem;
     font-family: var(--font-serif);
-    font-weight: 700;
+    font-weight: 400;
     color: oklch(12% 0.008 60 / 0.04);
     line-height: 1;
     position: absolute;
@@ -1528,7 +1528,7 @@
     display: block;
     font-family: var(--font-serif);
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--white);
     margin-bottom: 6px;
     text-shadow: 0 0 16px rgba(184, 154, 90, 0.2);

@@ -49,7 +49,7 @@
 .page-hero__title {
     font-family: var(--font-serif);
     font-size: clamp(2.4rem, 5vw, 4.2rem);
-    font-weight: 700;
+    font-weight: 400;
     color: var(--white);
     line-height: 1.1;
     margin-bottom: 24px;
@@ -261,7 +261,7 @@ html[data-theme="light"] .page-hero--split {
 .service-visual-card__number {
     font-family: var(--font-serif);
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--white);
     text-shadow: 0 0 16px rgba(184, 154, 90, 0.2);
 }
@@ -375,7 +375,7 @@ html[data-theme="light"] .page-hero--split {
 .seo-rank {
     font-family: var(--font-serif);
     font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--blue);
     min-width: 36px;
     text-shadow: 0 0 10px rgba(184, 154, 90, 0.3);
@@ -490,7 +490,7 @@ html[data-theme="light"] .page-hero--split {
 .case-stat__number {
     font-family: var(--font-serif);
     font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--blue);
     text-shadow: 0 0 12px rgba(184, 154, 90, 0.3);
 }
@@ -660,7 +660,7 @@ html[data-theme="light"] .page-hero--split {
     display: block;
     font-family: var(--font-serif);
     font-size: 2.2rem;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--white);
     text-shadow: 0 0 20px rgba(184, 154, 90, 0.2);
     margin-bottom: 4px;
@@ -742,7 +742,7 @@ html[data-theme="light"] .page-hero--split {
     display: block;
     font-family: var(--font-serif);
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--blue);
     text-shadow: 0 0 14px rgba(184, 154, 90, 0.3);
     margin-bottom: 4px;
@@ -850,7 +850,7 @@ html[data-theme="light"] .page-hero--split {
     display: block;
     font-family: var(--font-serif);
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--blue);
     text-shadow: 0 0 16px rgba(184, 154, 90, 0.3);
     margin-bottom: 4px;
@@ -910,7 +910,7 @@ html[data-theme="light"] .page-hero--split {
 .value-card__number {
     font-family: var(--font-serif);
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 400;
     color: rgba(184, 154, 90, 0.08);
     position: absolute;
     top: 20px;
@@ -1248,7 +1248,7 @@ html[data-theme="light"] .page-hero--split {
 .about-num__val {
     font-family: var(--font-serif);
     font-size: 2.4rem;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--white);
     line-height: 1;
 }
@@ -1256,7 +1256,7 @@ html[data-theme="light"] .page-hero--split {
 .about-num__plus {
     font-family: var(--font-serif);
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--blue);
     margin-left: 2px;
     line-height: 1;
@@ -1472,7 +1472,7 @@ html[data-theme="light"] .page-hero--split {
 .pricing-title {
     font-family: var(--font-serif);
     font-size: clamp(2.6rem, 5.5vw, 4.4rem);
-    font-weight: 700;
+    font-weight: 400;
     color: var(--white);
     line-height: 1.1;
     margin: 16px 0 20px;
@@ -1834,7 +1834,7 @@ html[data-theme="light"] .page-hero--split {
 .pricing-services__title {
     font-family: var(--font-serif);
     font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-    font-weight: 700;
+    font-weight: 400;
     color: var(--warm-white);
     letter-spacing: -0.02em;
     margin-top: 14px;
@@ -1980,7 +1980,7 @@ html[data-theme="light"] .page-hero--split {
 .pricing-process__header h2 {
     font-family: var(--font-serif);
     font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-    font-weight: 700;
+    font-weight: 400;
     color: var(--warm-white);
     letter-spacing: -0.02em;
     margin-top: 14px;
@@ -2209,7 +2209,7 @@ html[data-theme="light"] .pricing-process__step p {
 .media-mention__title {
     font-family: var(--font-serif);
     font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-    font-weight: 700;
+    font-weight: 400;
     color: oklch(96% 0.005 80);
     line-height: 1.15;
     margin-bottom: 20px;
@@ -2426,7 +2426,7 @@ html[data-theme="light"] .media-mention__frame {
 .specialist-strip__title {
     font-family: var(--font-serif);
     font-size: clamp(1.55rem, 3.2vw, 2.3rem);
-    font-weight: 700;
+    font-weight: 400;
     color: oklch(96% 0.005 80);
     line-height: 1.25;
     margin-bottom: 16px;
